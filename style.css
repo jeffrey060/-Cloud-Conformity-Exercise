@@ -30,7 +30,7 @@ body {
       /* text-shadow: transparent 0px 0px 0px, rgba(0,0,0,1) 0px 0px 0px !important; */
 
   }
-  .list-container .wrap {
+.list-container .wrap {
       /* width:200px; */
       /* grid-column:2; */
       height:100%;
@@ -39,7 +39,8 @@ body {
       margin:1px;
 
   }
-  .list-container .wrap div {
+.list-container .wrap div {
+      /* max-width: 500px; */
       margin:1px;
       padding: 3px 0;
   }
@@ -47,19 +48,92 @@ a, a:hover{
       cursor: pointer;
       outline: none;
   }
-a:-webkit-any-link {
-      color: #6B7C94;
+.list-container a{
+      color:  #6B7C94;
+}
+a:link {
       text-decoration: underline;
-
   }
+
 .list-container h3{
       margin-top: 30px;
       margin-bottom: 15px;
 
 }
 .list-container div{
-            padding: 3px 0;
+      padding: 3px 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+      font-family: 'Volte-Semibold';
+      font-weight: normal;
+  }
+h2 {
+      color: #3E2559;
+      font-size: 42px;
+  }
+h2.big, h3.big {
+      padding: 100px 0 70px 0;
+  }
+h3 a{
+      color: #3E2559 !important;
+      font-size: 32px;
+      /* text-shadow: transparent 0px 0px 0px, rgba(0,0,0,1) 0px 0px 0px !important; */
+}
+.grid {
+      max-width: 1170px;
+      position: relative;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+.right-side p{
+      color: #fff;
+}
+p {
+      /* display: block; */
+      color:#3E2559;
+      margin-block-start: 1em;
+      /* margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px; */
+  }
+.copy p {
+      margin-bottom: 15px;
+      font-size: 18px;
+  }
+.grid-section {
+      width: 100%;
+      float: left;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+  }
+.grid.small {
+      /* max-width: 970px; */
+      padding: 0 30px;
+  }
+
+
+.title {
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      line-height: 40px;
+}
+.right-side{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    opacity: 0.5;
+}
+
+.content-page{
+      height: 540px;
+      }
+
+
+
+
 @media (min-width: 680px) {
        .list-container{
 
@@ -78,4 +152,21 @@ a:-webkit-any-link {
             margin: 0 auto;
             padding: 0 50px;
         }
+}
+
+@media screen and (min-width: 769px) {
+      .left-side{
+            display: flex;
+            align-items: center;
+      }
+      .right-side{
+            border-left: 3px solid #fff;
+            padding-left: 40px;
+      }
+      .title{
+            font-size: 54px;
+            letter-spacing: -2.7px;
+            color: #fff;
+            line-height: 54px;
+      }
 }
