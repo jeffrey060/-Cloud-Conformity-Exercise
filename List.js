@@ -11,16 +11,17 @@ async function createList(){
             }
       sortByKey(apiData.data, 'id');
       console.log(apiData.data);
-      let output = '<div class="container ">'
+      let output = '<div class="container">' 
       apiData.data.forEach(
             service=>{
-                  output +=  `<div class='wrap '><h3><a">${service.id}</a></h3>`
+                  output +=  `<div class='wrap'><h3><a href="https://www.cloudconformity.com/conformity-rules/${service.id}">${service.id}</a></h3>`
                   service.relationships.rules.data.forEach(
                         rule=>{
+
                               apiData.included.forEach(
                                    content=>{
                                          if(content.id===rule.id){
-                                          output +=  ` <div><a>
+                                          output +=  ` <div><a href="https://www.cloudconformity.com/conformity-rules/ACM/${content.attributes.slug}.html">
                                           ${content.attributes.title}</a></div>`
                                    }
                                    })
