@@ -11,6 +11,25 @@ async function createList(){
             }
       sortByKey(apiData.data, 'id');
       console.log(apiData.data);
-     document.getElementById('grid').innerHTML= output;         
+      let output = '<div class="container ">'
+      apiData.data.forEach(
+            service=>{
+                  output +=  `<div class='wrap '><h3><a">${service.id}</a></h3>`
+                  service.relationships.rules.data.forEach(
+                        rule=>{
+                              apiData.included.forEach(
+                                   content=>{
+                                         if(content.id===rule.id){
+                                          output +=  ` <div><a>
+                                          ${content.attributes.title}</a></div>`
+                                   }
+                                   })
+                        }
+                  )
+                  output +=  `</div>`
+            }
+         )
+         output +=  `</div>`;
+         document.getElementById('grid').innerHTML= output;
  }
-createList();
+ createList();
