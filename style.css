@@ -67,7 +67,7 @@ h3 a{
       font-size: 32px;
 }
 .grid {
-      max-width: 1170px;
+      max-width: 1000px;
       position: relative;
       margin: 0 auto;
       padding: 0 20px;
@@ -168,7 +168,7 @@ p {
             column-count: 2;
         }
        .grid {
-            max-width: 1170px;
+            max-width: 1000px;
             position: relative;
             margin: 0 auto;
             padding: 0 50px;
