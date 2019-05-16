@@ -13,9 +13,7 @@
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.12);
 }
 
-
-/* Example responsive navigation menu  */
-.fixed-nav-bar li, .fixed-nav-bar a {
+.fixed-nav-bar li, .fixed-nav-bar a { 
   height: 50px;
   line-height: 50px;
 }

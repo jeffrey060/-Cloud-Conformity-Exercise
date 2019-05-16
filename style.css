@@ -16,20 +16,18 @@ body {
       padding: 0;
   }
 .list-container{
-      /* display: flex; */
       flex-direction: column;
       column-count: 1;
-      /* grid-template-columns: 1fr; */
       margin:0;
-      /* border: 1px solid black; */
-      /* break-inside: avoid; */
       padding-top: 0;
       padding-bottom: 120px;
       border-bottom:1px solid #6B7C94;
+
   }
 .list-container .wrap {
       height:100%;
       overflow: auto;
+
   }
 .list-container .wrap div {
       margin:0px;
@@ -72,7 +70,6 @@ h2.big, h3.big {
 h3 a{
       color: #3E2559 !important;
       font-size: 32px;
-      /* text-shadow: transparent 0px 0px 0px, rgba(0,0,0,1) 0px 0px 0px !important; */
 }
 .grid {
       max-width: 1170px;
@@ -84,7 +81,6 @@ h3 a{
       color: #fff;
 }
 p {
-      /* display: block; */
       color:#3E2559;
       margin-block-start: 1em;
       margin-block-end: 1em;
@@ -105,7 +101,6 @@ p {
       z-index: 1;
   }
 .grid.small {
-      /* max-width: 970px; */
       padding: 0 30px;
   }
 .small-nav{
@@ -149,6 +144,7 @@ p {
       height: 570px;
       }
 .table-wrap{
+      display:inline-block;
       height: 530px;
       z-index:1;
       margin-left: 40px;
@@ -201,19 +197,120 @@ p {
   }
 .footer-section-medium-warp{
       background: url(https://www.cloudconformity.com/assets/images/line4.svg) no-repeat, linear-gradient(transparent, transparent);
-      background-position: 210% 0%;
+      background-position: -1500px 0%;
       background-repeat: no-repeat;
 }
 .footer-section-out-warp{
       background: url(https://www.cloudconformity.com/assets/images/line5.svg) no-repeat, linear-gradient(transparent, transparent);
-      background-position: -110% 50%;
+      background-position: -150% 60% ;
       background-repeat: no-repeat;
+}
+
+.footer-inner-wrap{
+      width: 100%;
+      position: relative;
+      float: left;
+}
+.footer-wrap{
+      width: 100%;
+      float: left;
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0;
+      font-size: 0;
+}
+.partner{
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 14px;
+      display: block;
+      display: inline-block;
+
+}
+.aws-img{
+      width:150px;
+      margin: 2px 0 20px 45px;
+}
+.ftr-nav {
+      text-align: right;
+      margin: 2px 0 20px 45px;
+      display: inline-block;
+      vertical-align: top;
+  }
+.ftr-nav div {
+      display: block;
+      margin-bottom: 12px;
+      font-family: "Volte-Semibold";
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: -0.018em;}
+.ftr-nav span {
+            display: block;
+            margin-top: 1px;
+        }
+.ftr-nav span a {
+       color: #6B7C94;
+       opacity: 0.67;
+        font-size: 14px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+         user-select: none;
+         -webkit-transition: all 0.18s linear;
+         -moz-transition: all 0.18s linear;
+         -ms-transition: all 0.18s linear;
+         -o-transition: all 0.18s linear;
+         transition: all 0.18s linear;
+        }
+.address-social {
+            padding-left: 50px;
+            text-align: right;
+            float: right;
+            flex-grow: 1;
+        }
+.copyright {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+}
+.copyright span:nth-child(1) {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 14px;
+      opacity: 1;
+      padding: 0;
+      letter-spacing: -0.016em;
+  }
+.copyright .legalLink {
+      margin-top: 7px;
+  }
+.adress-social .social {
+      display: block;
+      font-size: 0;
+      margin-top: 28px;
+      text-align: right;
+  }
+.adress-social .social a {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      overflow: hidden;
+      margin: 0 10px 0 0;
+      border-radius: 50%;
+      background-color: rgba(107, 124, 148, 0.5);
+      transition: all 0.18s linear;
+  }
+.legalLink a:link{
+      color:#6B7C94 !important;
+}
+.legalLink a:link active{
+      color:#6B7C94 !important;
 }
 @media (min-width: 680px) {
        .list-container{
-
             column-count: 2;
-
         }
         .grid {
             max-width: 1170px;
@@ -226,6 +323,20 @@ p {
        .small-nav {
         display: none;
     }
+       .ftr-nav {
+      float: right;
+   }
+    .address-social {
+      text-align: center;
+      flex-grow: 0;
+  }
+
+}
+@media screen and (max-width: 540px) {
+      .aws-img{
+            width:200px;
+            margin-left:80px ;
+      }
 }
 @media screen and (min-width: 769px) {
       .left-side{
