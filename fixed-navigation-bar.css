@@ -81,13 +81,34 @@ cursor:pointer;
 margin:0.1rem 0.1rem 0.1rem 0rem;
 transition:all 0.5s ease-in-out;
 }
+.my-buttom-button{
+  font-size: 18px;
+  width: 260px;
+  height: 60px;
+  display: block;
+  background: #c6366E;
+  margin: 40px auto !important;
+  border: 0.05rem solid black;
+  border-color:white;
+  color: white;
+  border-radius: 30px;
+  padding: 0rem 0.8rem;
+  cursor:pointer;
+  margin:0.1rem 0.1rem 0.1rem 0rem;
+  transition:all 0.5s ease-in-out;
+  }
+.my-buttom-button:focus{
+    outline:none;
+  }
 .my-button:hover{
   background:#3E2559;
 }
 .my-button:focus{
   outline:none;
 }
-
+.logo-img{
+  width: 230px;
+}
 @media only screen and (max-width: 1030px) {
   /* .menu-warp{
     width: 100%;
@@ -108,7 +129,7 @@ transition:all 0.5s ease-in-out;
   .logo {
     position: absolute;
     top: 0;
-    left: 15px;
+    left: 30px;
     margin-left: 0px;
   }
   .menu-items {
