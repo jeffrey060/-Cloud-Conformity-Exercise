@@ -1,211 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=Fetch, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" href="fixed-navigation-bar.css">
-      <title>Cloud Conformity Exercise</title>
-</head>
-<body>
-      <!-- Header nav part -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=Fetch, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="fixed-navigation-bar.css" />
+    <title>Cloud Conformity Exercise</title>
+  </head>
+  <body>
+    <!-- Header nav part -->
     <div class="header-wraper">
-            <nav class="fixed-nav-bar">
-              <div id="menu" class="menu">
-                  <a class="logo" href="https://www.cloudconformity.com/"> <img class="logo-img" border="0"src="https://www.cloudconformity.com/assets/images/logo-cloud-conformity.png" alt="Cloud Conformity"></a> 
-                  <a class="show" href="#menu"><img style="max-width: 55px;"src="img/menu-hamburger.png"> </a>
-                  <a class="hide" href="#hidemenu"><img style="max-width: 55px;"src="img/menu-hamburger.png"></a>
-                  <ul class="menu-items">
-                        <li><a href="https://www.cloudconformity.com/about-us.html">About</a></li>
-                        <li><a href="https://www.cloudconformity.com/frequently-asked-questions.html">FAQ</a></li>
-                        <li class="special-index-item"><a href="https://www.cloudconformity.com/conformity-rules/">Knowledge Base</a></li>
-                        <li><a href="https://www.cloudconformity.com/pricing.html">Pricing</a></li>
-                        <li><a href="https://www.cloudconformity.com/product.html">Product</a></li>
-                        <li class="last-index-item"><a href="https://www.cloudconformity.com/blog/">Blog</a></li>
-                        <li class="sign-index-item"><a href="https://www.cloudconformity.com/sign-in.html">Sign in</a></li>
-                        <li><a href="https://www.cloudconformity.com/sign-up.html" title="sign up"><button class="my-button">Free trial</button></a></li>
-                 </ul>
-             </div>
-            </nav>
+      <nav class="fixed-nav-bar">
+        <div id="menu" class="menu">
+          <a class="logo" href="https://www.cloudconformity.com/">
+            <img
+              class="logo-img"
+              border="0"
+              src="https://www.cloudconformity.com/assets/images/logo-cloud-conformity.png"
+              alt="Cloud Conformity"
+          /></a>
+          <a class="show" href="#menu"
+            ><img style="max-width: 55px;" src="img/menu-hamburger.png" />
+          </a>
+          <a class="hide" href="#hidemenu"
+            ><img style="max-width: 55px;" src="img/menu-hamburger.png"
+          /></a>
+          <ul class="menu-items">
+            <li>
+              <a href="https://www.cloudconformity.com/about-us.html">About</a>
+            </li>
+            <li>
+              <a
+                href="https://www.cloudconformity.com/frequently-asked-questions.html"
+                >FAQ</a
+              >
+            </li>
+            <li class="special-index-item">
+              <a href="https://www.cloudconformity.com/conformity-rules/"
+                >Knowledge Base</a
+              >
+            </li>
+            <li>
+              <a href="https://www.cloudconformity.com/pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a href="https://www.cloudconformity.com/product.html">Product</a>
+            </li>
+            <li class="last-index-item">
+              <a href="https://www.cloudconformity.com/blog/">Blog</a>
+            </li>
+            <li class="sign-index-item">
+              <a href="https://www.cloudconformity.com/sign-in.html">Sign in</a>
+            </li>
+            <li>
+              <a
+                href="https://www.cloudconformity.com/sign-up.html"
+                title="sign up"
+                ><button class="my-button">Free trial</button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
     <!-- Body part -->
     <div class="body-wraper">
-   <!-- body header section-->
+      <!-- body header section-->
       <div class="grid-section content-page">
-       <div class="table-view">
-         <div class="wrp header">
-            <div >
+        <div class="table-view">
+          <div class="wrp header">
+            <div>
               <div class="table-wrap">
                 <div class="table-middle-wrap">
-                        <div class="row table-inner-wrap">
-                        <!--  Left side -->
-                              <div class="left-side col-md-6" >
-                                    <h1 class="title">Knowledge base</h1>
-                              </div>
-                        <!-- Right side -->
-                              <div class="right-side col-md-6">
-                              <!-- Heading summary -->
-                                    <div>
-                                          <p>Cloud Conformity is a continuous assurance tool that 
-                                          provides peace of mind for your AWS infrastructure, 
-                                          delivering over 500 automated best practice checks 
-                                          across the five pillars of the AWS Well-Architected 
-                                          Framework.</p>
-                                    </div>
-                              </div>
-                              <div class="number-nav2">
-                                    <div class="">
-                                          <!-- small nav -->
-                                          <div class="nav-wrp">
-                                                <div class="small-nav">
-                                                      <span class="small-nav-span"><a href="https://www.cloudconformity.com/">Home</a></span>
-                                                      <span class="small-nav-span2"><a href="https://www.cloudconformity.com/conformity-rules/">Knowledge base</a></span>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
+                  <div class="row table-inner-wrap">
+                    <!--  Left side -->
+                    <div class="left-side col-md-6">
+                      <h1 class="title">Knowledge base</h1>
+                    </div>
+                    <!-- Right side -->
+                    <div class="right-side col-md-6">
+                      <!-- Heading summary -->
+                      <div>
+                        <p>
+                          Cloud Conformity is a continuous assurance tool that
+                          provides peace of mind for your AWS infrastructure,
+                          delivering over 500 automated best practice checks
+                          across the five pillars of the AWS Well-Architected
+                          Framework.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="number-nav2">
+                      <div class="">
+                        <!-- small nav -->
+                        <div class="nav-wrp">
+                          <div class="small-nav">
+                            <span class="small-nav-span"
+                              ><a href="https://www.cloudconformity.com/"
+                                >Home</a
+                              ></span
+                            >
+                            <span class="small-nav-span2"
+                              ><a
+                                href="https://www.cloudconformity.com/conformity-rules/"
+                                >Knowledge base</a
+                              ></span
+                            >
+                          </div>
                         </div>
-                </div> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-           </div>
+            </div>
           </div>
         </div>
-       </div>
-     
-     <!-- Intro-table section -->
-      <div class="grid-section">
-       <div class="grid copy small">
-             <h2 class="big ">Conformity Rules</h2>
-             <div>
-                   <div>
-                       <p>
-                         <br>Along with continuous assurance of your infrastructure
-                         , Cloud Conformity is an educational tool, providing detailed
-                          resolution steps to rectify security vulnerabilities, 
-                          performance and cost inefficiencies, and reliability risks. 
-                          The combination of real time monitoring and simplified, 
-                          readily available remediation information enables organisations 
-                          to embrace DevOps, without the fear of introducing vulnerabilities
-                           or reliability risks.
-                       </p> 
-                       <p>
-                         Below are the AWS services and their associated rules included 
-                         in the continuous assurance check by Cloud Conformity. New rules
-                          are being developed every day so if there’s a particular rule 
-                          or service that isn’t covered, please get in touch with us and
-                           we’ll add it to the list. <br>    
-                       </p>
-                  </div>
-             </div>
-        </div>
-      
-       </div> 
-        <!-- Ruls listing section -->
-       <div class="grid-section" >
-          <div id="grid" class="grid copy"> <script src="List.js"> </script></div>
-       </div>  
-       <!-- footer section -->
-       <div class="grid-section" >
-          <div  class="footer-section-out-warp"> 
-             <div  class="footer-section-medium-warp"> 
-                   <div class="footer-section-warp">
-                         <p>Whether you are still exploring the benefits of Amazon Web 
-                           Services, or are running complex critical workloads,
-                           <span class='full-bold'>Cloud Conformity simplifies the challenging
-                           task of maintaining visibility of your infrastructure</span>
-                           and ensuring compliance against best practices, along with identifying 
-                           potential threats in real-time. </p>
-                           <a href="https://www.cloudconformity.com/sign-up.html" title="sign up">
-                           <button class="my-buttom-button ">Start a free trial</button></a>
-                   </div>
-             </div>
-            </div>  
-       </div> 
-      </div> 
-      <div class="footer-wrap">
-          <div class="grid footer-inner-wrap row">
-            <div class="partner ">
-               <img class="aws-img" src="https://www.cloudconformity.com/assets/images/aws/SecurityCompetency_CloudManagementToolsCompetency.png"
-                alt="Amazon Web Services - Technology Partner, Security and Cloud Management Tools Competency">
-            </div>
-            <div class="ftr-nav "> <div>Product</div> 
-                 <span>
-                       <a href="https://www.cloudconformity.com">Home</a></span>
-                  <span>
-                        <a href="https://www.cloudconformity.com/product.html">Features</a>
-                  </span> 
-                  <span>
-                        <a href="/pricing.html">Pricing</a>
-                  </span>
-                  <span>
-                         <a href="https://github.com/cloudconformity/auto-remediate">Auto-Remediation</a>
-                  </span> 
-                  <span>
-                        <a href="https://github.com/cloudconformity/documentation-api">API Documentation</a>
-                  </span> 
-                  <span>
-                        <a href="/help/">Help</a>
-                  </span>
-             </div>
-             <div class="ftr-nav "> 
-                   <div>Company</div>
-                        <span>
-                          <a href="https://www.cloudconformity.com/about-us.html">About</a>
-                        </span>
-                        <span>
-                              <a href="https://cloudconformity.breezy.hr/">Careers</a>
-                        </span> 
-                        <span>
-                              <a href="https://www.cloudconformity.com/conformity-rules/">Knowledge Base</a>
-                        </span> 
-                        <span>
-                              <a href="https://www.cloudconformity.com/frequently-asked-questions.html">FAQ</a>
-                        </span> 
-                        <span>
-                              <a href="https://www.cloudconformity.com/contact-us.html">Contact</a>
-                        </span>
-                        <span>
-                               <a href="https://www.cloudconformity.com/blog/">Blog</a>
-                        </span> 
-                        <span>
-                               <a href="https://www.cloudconformity.com/customers/">Customers</a>
-                        </span> 
-              </div>
-              <div class="address-social ">
-                     <div class="copyright"> 
-                           <div> 
-                               <span> © 2016 - 2019 Cloud Conformity Pty. Ltd.<br> Website version: v1.3.62<br> Last update: 10 May 2019 
-                               </span>
-                           </div>
-                           <div class="legalLink">
-                                <a href="https://www.cloudconformity.com/terms-and-conditions.html">Terms and Conditions
-                                </a> 
-                                <span>—</span>
-                                <a href="https://www.cloudconformity.com/privacy-policy.html">Privacy Policy</a>
-                           </div> 
-                           <div class="legalLink">
-                                <a href="https://www.cloudconformity.com/saas-agreement.html">Saas Agreement</a>
-                           </div> 
-                           <div class="social">
-                                <a class="in" href="https://www.linkedin.com/company/10621658/" target="_blank" 
-                                title="Cloud Conformity LinkedIn profile"></a>
-                                <a class="yt" href="https://www.youtube.com/channel/UCmZ9akNGr6kqEuDwgFgFDkQ" 
-                                target="_blank" title="Cloud Conformity Videos"></a> 
-                                <a class="g" href="https://plus.google.com/+Cloudconformity" target="_blank" 
-                                title="Cloud Conformity Google+ Profile"></a> 
-                                <a class="tw" href="https://twitter.com/cloudconformity" target="_blank" 
-                                title="Our Twitter feed"></a> 
-                                <a class="mr" href="https://medium.com/cloud-conformity" target="_blank" 
-                                title="Cloud Conformity Medium Blog"></a>
-                           </div>
-                      </div>
-                </div>
-         </div>
-      </div> 
+      </div>
 
-</body>
+      <!-- Intro-table section -->
+      <div class="grid-section">
+        <div class="grid copy small">
+          <h2 class="big ">Conformity Rules</h2>
+          <div>
+            <div>
+              <p>
+                <br />Along with continuous assurance of your infrastructure ,
+                Cloud Conformity is an educational tool, providing detailed
+                resolution steps to rectify security vulnerabilities,
+                performance and cost inefficiencies, and reliability risks. The
+                combination of real time monitoring and simplified, readily
+                available remediation information enables organisations to
+                embrace DevOps, without the fear of introducing vulnerabilities
+                or reliability risks.
+              </p>
+              <p>
+                Below are the AWS services and their associated rules included
+                in the continuous assurance check by Cloud Conformity. New rules
+                are being developed every day so if there’s a particular rule or
+                service that isn’t covered, please get in touch with us and
+                we’ll add it to the list. <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ruls listing section -->
+      <div class="grid-section">
+        <div id="grid" class="grid copy"><script src="List.js"></script></div>
+      </div>
+      <!-- footer section -->
+      <div class="grid-section">
+        <div class="footer-section-out-warp">
+          <div class="footer-section-medium-warp">
+            <div class="footer-section-warp">
+              <p>
+                Whether you are still exploring the benefits of Amazon Web
+                Services, or are running complex critical workloads,
+                <span class="full-bold"
+                  >Cloud Conformity simplifies the challenging task of
+                  maintaining visibility of your infrastructure</span
+                >
+                and ensuring compliance against best practices, along with
+                identifying potential threats in real-time.
+              </p>
+              <a
+                href="https://www.cloudconformity.com/sign-up.html"
+                title="sign up"
+              >
+                <button class="my-buttom-button ">Start a free trial</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrap">
+      <div class="grid footer-inner-wrap row">
+        <div class="partner ">
+          <img
+            class="aws-img"
+            src="https://www.cloudconformity.com/assets/images/aws/SecurityCompetency_CloudManagementToolsCompetency.png"
+            alt="Amazon Web Services - Technology Partner, Security and Cloud Management Tools Competency"
+          />
+        </div>
+        <div class="ftr-nav ">
+          <div>Product</div>
+          <span> <a href="https://www.cloudconformity.com">Home</a></span>
+          <span>
+            <a href="https://www.cloudconformity.com/product.html">Features</a>
+          </span>
+          <span>
+            <a href="/pricing.html">Pricing</a>
+          </span>
+          <span>
+            <a href="https://github.com/cloudconformity/auto-remediate"
+              >Auto-Remediation</a
+            >
+          </span>
+          <span>
+            <a href="https://github.com/cloudconformity/documentation-api"
+              >API Documentation</a
+            >
+          </span>
+          <span>
+            <a href="/help/">Help</a>
+          </span>
+        </div>
+        <div class="ftr-nav ">
+          <div>Company</div>
+          <span>
+            <a href="https://www.cloudconformity.com/about-us.html">About</a>
+          </span>
+          <span>
+            <a href="https://cloudconformity.breezy.hr/">Careers</a>
+          </span>
+          <span>
+            <a href="https://www.cloudconformity.com/conformity-rules/"
+              >Knowledge Base</a
+            >
+          </span>
+          <span>
+            <a
+              href="https://www.cloudconformity.com/frequently-asked-questions.html"
+              >FAQ</a
+            >
+          </span>
+          <span>
+            <a href="https://www.cloudconformity.com/contact-us.html"
+              >Contact</a
+            >
+          </span>
+          <span>
+            <a href="https://www.cloudconformity.com/blog/">Blog</a>
+          </span>
+          <span>
+            <a href="https://www.cloudconformity.com/customers/">Customers</a>
+          </span>
+        </div>
+        <div class="address-social ">
+          <div class="copyright">
+            <div>
+              <span>
+                © 2016 - 2019 Cloud Conformity Pty. Ltd.<br />
+                Website version: v1.3.62<br />
+                Last update: 10 May 2019
+              </span>
+            </div>
+            <div class="legalLink">
+              <a
+                href="https://www.cloudconformity.com/terms-and-conditions.html"
+                >Terms and Conditions
+              </a>
+              <span>—</span>
+              <a href="https://www.cloudconformity.com/privacy-policy.html"
+                >Privacy Policy</a
+              >
+            </div>
+            <div class="legalLink">
+              <a href="https://www.cloudconformity.com/saas-agreement.html"
+                >Saas Agreement</a
+              >
+            </div>
+            <div class="social">
+              <a
+                class="in"
+                href="https://www.linkedin.com/company/10621658/"
+                target="_blank"
+                title="Cloud Conformity LinkedIn profile"
+              ></a>
+              <a
+                class="yt"
+                href="https://www.youtube.com/channel/UCmZ9akNGr6kqEuDwgFgFDkQ"
+                target="_blank"
+                title="Cloud Conformity Videos"
+              ></a>
+              <a
+                class="g"
+                href="https://plus.google.com/+Cloudconformity"
+                target="_blank"
+                title="Cloud Conformity Google+ Profile"
+              ></a>
+              <a
+                class="tw"
+                href="https://twitter.com/cloudconformity"
+                target="_blank"
+                title="Our Twitter feed"
+              ></a>
+              <a
+                class="mr"
+                href="https://medium.com/cloud-conformity"
+                target="_blank"
+                title="Cloud Conformity Medium Blog"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
