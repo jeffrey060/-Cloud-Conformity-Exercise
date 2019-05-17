@@ -7,7 +7,7 @@ body {
   padding: 0;
   cursor: default;
   overflow-x: hidden;
-  min-width: 375px;
+  min-width: 400px;
   background-color: #fff;
 }
 * {
