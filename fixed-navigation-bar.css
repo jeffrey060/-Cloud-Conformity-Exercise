@@ -7,7 +7,7 @@
   width: 100%;
   height: 95px;
   background-color: #fff;
-  opacity: 0.99;
+  opacity: 0.98;
   font-family: "Volte-Medium";
   font-size: 18px;
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.12);
@@ -17,6 +17,7 @@
 .fixed-nav-bar a {
   height: 50px;
   line-height: 50px;
+  padding-right: 6px;
 }
 .menu {
   width: 98%;
@@ -34,18 +35,21 @@
   color: #3e2559 !important;
 }
 .last-index-item {
-  padding-right: 30px;
+  padding-right: 30px !important;
   border-right: 1px solid rgb(163, 177, 197);
 }
 .menu-items {
-  padding-top: 20px;
+  padding-top: 24px;
   display: inline-block;
   float: right;
+  z-index: 10;
 }
 .logo {
   display: inline-block;
-  margin-right: 20px;
-  margin-left: 5px;
+  margin-right: 5px;
+  position: absolute;
+  top: 6px;
+  left: 25px;
   padding-top: 17px;
 }
 
@@ -61,6 +65,7 @@
 .hide {
   display: none;
   padding-left: 15px;
+  padding-right: 20px !important;
 }
 .show {
   margin-top: 20px;
@@ -71,6 +76,10 @@
 .sign-index-item {
   font-size: 14px;
 }
+.sign-index-item a{
+  margin-left:14px;
+  margin-right:14px;
+}
 .my-button {
   font-size: 14px;
   background: #c6366e;
@@ -78,7 +87,7 @@
   border-color: white;
   color: white;
   border-radius: 1.9rem;
-  padding: 0rem 0.8rem;
+  padding: 0rem 1rem;
   cursor: pointer;
   margin: 0.1rem 0.1rem 0.1rem 0rem;
   transition: all 0.5s ease-in-out;
@@ -111,22 +120,22 @@
 .logo-img {
   width: 230px;
 }
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1150px) {
+  .first-index-item{
+    margin-top:100px;
+  }
   .last-index-item {
     padding-right: 0;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     border-right: 0px;
     border-bottom: 1px solid rgb(163, 177, 197);
+  }
+  .sign-index-item {
+    margin-top: 30px;
   }
   .menu {
     position: relative;
     width: 100%;
-  }
-  .logo {
-    position: absolute;
-    top: 0;
-    left: 30px;
-    margin-left: 0px;
   }
   .menu-items {
     display: none;
@@ -135,16 +144,18 @@
     padding-bottom: 100px;
     bottom: 0;
     left: 0;
-    background: #eef2f8;
+    background: transparent;
   }
   .menu-items li {
+    margin-bottom: 25px;
+    font-size:20px;
     display: block;
     text-align: center;
   }
   .show,
   .hide {
     position: absolute;
-    right: 15px;
+    right: 1%;
   }
   .show {
     display: inline-block;
@@ -152,9 +163,31 @@
   .hide {
     display: none;
   }
+  .dorp-menu-background{
+    display:none;
+    }
   #menu:target .show {
     display: none;
   }
+  #menu:target .inner-menu {
+
+    margin: 0 auto;
+    width: 50%;
+  }
+  #menu:target .my-button{
+    font-size:18px;
+  }
+  #menu:target .dorp-menu-background{
+    display: inline-block;
+    margin-top:95px;
+    height: 95% !important;
+    background:#eef2f8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    }
   #menu:target .hide,
   #menu:target .menu-items {
     display: inline-block;

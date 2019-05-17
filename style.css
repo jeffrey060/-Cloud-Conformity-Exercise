@@ -7,7 +7,7 @@ body {
   padding: 0;
   cursor: default;
   overflow-x: hidden;
-  min-width: 400px;
+  min-width: 375px;
   background-color: #fff;
 }
 * {
@@ -205,8 +205,6 @@ p {
   max-width: 800px;
   position: relative;
   border-bottom: 1px #6b7c94 solid;
-
-  /* background-size: cover; */
 }
 .footer-section-medium-warp {
   background: url(https://www.cloudconformity.com/assets/images/line4.svg)
@@ -224,17 +222,17 @@ p {
 }
 
 .footer-inner-wrap {
-  width: 100%;
+  width: 100% !important;
   position: relative;
   float: left;
+  margin:100px auto;
+  width: 100%;
+  float: left;
+  padding-top:50px;
+ 
 }
 .footer-wrap {
-  width: 100%;
-  float: left;
-  position: relative;
-  overflow: hidden;
-  padding: 100px 0;
-  font-size: 0;
+ 
 }
 .partner {
   text-align: center;
@@ -245,7 +243,7 @@ p {
   display: inline-block;
 }
 .aws-img {
-  width: 150px;
+  width: 220px;
   margin: 2px 0 20px 45px;
 }
 .ftr-nav {
@@ -283,10 +281,10 @@ p {
   padding-left: 50px;
   text-align: right;
   float: right;
-  flex-grow: 1;
+  display: inline-block;
+  /* flex-grow: 1; */
 }
 .copyright {
-  display: inline-block;
   vertical-align: top;
   font-size: 14px;
 }
@@ -306,6 +304,9 @@ p {
   font-size: 0;
   margin-top: 28px;
   text-align: right;
+}
+.footer-wrap-item{
+  padding-right:20px;
 }
 .adress-social .social a {
   width: 24px;
@@ -344,15 +345,16 @@ p {
     float: right;
   }
   .address-social {
+    float: inline-block;
     text-align: center;
     flex-grow: 0;
   }
 }
 @media screen and (max-width: 540px) {
-  .aws-img {
+  /* .aws-img {
     width: 200px;
     margin-left: 80px;
-  }
+  } */
 }
 @media screen and (min-width: 800px) {
   .left-side {
@@ -381,3 +383,10 @@ p {
     padding-left: 116px;
   }
 }
+@media screen and (max-width: 550px) {
+  .table-wrap {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
