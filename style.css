@@ -420,4 +420,7 @@ p {
     margin-left: 0px;
     margin-right: 0px;
   }
+  .right-side{
+    padding-right:0px;
+  }
 }
