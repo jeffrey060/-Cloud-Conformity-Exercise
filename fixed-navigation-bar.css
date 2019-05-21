@@ -8,7 +8,7 @@
   height: 95px;
   background-color: #fff;
   opacity: 0.98;
-  font-family: "Volte-Medium";
+  font-family: "Volte-Semibold",'Montserrat', sans-serif;
   font-size: 18px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
@@ -205,7 +205,7 @@
     height: 75px;
   }
   .first-index-item {
-    margin-top: 80px;
+    margin-top: 44px;
   }
   #menu:target .dorp-menu-background {
     display: inline-block;
